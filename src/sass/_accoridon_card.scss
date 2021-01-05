@@ -1,0 +1,116 @@
+.accordion__card {
+  position: relative;
+  .illustration__box {
+    position: absolute;
+    top: 45%;
+    left: -90px;
+    z-index: 10;
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    min-height: 500px;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    background: url('/images/bg-pattern-desktop.svg') top -250px left -560px
+        no-repeat,
+      #fff;
+    .accordion__design {
+      position: absolute;
+      left: -70px;
+      top: 20%;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .accordion__card {
+    position: relative;
+    margin: auto;
+    max-width: 500px;
+    .illustration__box {
+      position: absolute;
+      top: 0%;
+      left: 40%;
+      transform: translate(-50%, -50%);
+      z-index: 10;
+      img {
+        width: 50%;
+      }
+    }
+    .container {
+      overflow: visible;
+      background: url('/images/bg-pattern-desktop.svg') top -850px left -240px
+          no-repeat,
+        #fff;
+      .accordion__design {
+        position: absolute;
+        left: 50%;
+        top: -5%;
+        transform: translate(-50%, -50%);
+        img {
+          width: 300px;
+        }
+      }
+      .accordion__faq {
+        margin: auto;
+        width: 80%;
+        .title {
+          font-size: 20px;
+          text-align: center;
+          margin-top: 100px;
+        }
+        .accordion__content {
+          .accordion {
+            border-bottom: 1px solid $light-grayish-blue;
+            .accordion__input {
+              visibility: hidden;
+              &:checked ~ .answer {
+                display: block !important;
+              }
+              &:checked ~ .question {
+                font-weight: bold;
+                .question__icon {
+                  transform: rotate(180deg);
+                }
+                &:hover {
+                  color: $very-dark-desaturated-blue;
+                }
+              }
+            }
+            .question {
+              display: flex;
+              justify-content: space-between;
+              font-size: 15px;
+              padding: 20px 0;
+              cursor: pointer;
+              .question__icon {
+                width: 13px;
+                cursor: pointer;
+                transition: all 0.4s ease-in-out;
+                img {
+                  width: 100%;
+                }
+              }
+              transition: all 0.2s ease-in-out;
+              &:hover {
+                color: $soft-red;
+              }
+            }
+            .answer {
+              display: none;
+              font-size: 13px;
+              padding: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

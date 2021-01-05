@@ -11,61 +11,129 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" href="./src/css/app.css" />
     <title>Welcome| FAQ Accordion Card</title>
   </head>
   <body>
     <div class="app__container">
-      <div class="accordion__card">
-        <div class="accordion__design"></div>
-        <div class="accordion__faq">
-          <div class="title">
-            <h1>FAQ</h1>
+      <div class="wrapper">
+        <div class="accordion__card">
+          <div class="illustration__box">
+            <img src="./images/illustration-box-desktop.svg" alt="" />
           </div>
-          <!-- <div class="accordion__content">
-            <div class="accoridon__a">
-              <div class="question question__a">
-                How many team members can I invite?
+          <div class="container">
+            <div class="accordion__design">
+              <img
+                src="./images/illustration-woman-online-desktop.svg"
+                alt=""
+              />
+            </div>
+            <div class="accordion__faq">
+              <div class="title">
+                <h1>FAQ</h1>
               </div>
-              <div class="answer answer__a">
-                ou can invite up to 2 additional users on the Free plan. There
-                is no limit on team members for the Premium plan.
+              <div class="accordion__content">
+                <div class="accordion accoridon__a">
+                  <input
+                    type="checkbox"
+                    name="accordion__checkbox"
+                    class="accordion__input"
+                    id="accordion-a"
+                  />
+                  <label class="question question__a" for="accordion-a">
+                    How many team members can I invite?
+                    <div class="question__icon">
+                      <img src="./images/icon-arrow-down.svg" alt="" />
+                    </div>
+                  </label>
+                  <div class="answer answer__a">
+                    You can invite up to 2 additional users on the Free plan.
+                    There is no limit on team members for the Premium plan.
+                  </div>
+                </div>
+                <div class="accordion accoridon__b">
+                  <input
+                    type="checkbox"
+                    name="accordion__checkbox"
+                    class="accordion__input"
+                    id="accordion-b"
+                  />
+
+                  <label class="question question__b" for="accordion-b">
+                    What is the maximum file upload size?
+                    <div class="question__icon">
+                      <img src="./images/icon-arrow-down.svg" alt="" />
+                    </div>
+                  </label>
+                  <div class="answer answer__b">
+                    No more than 2GB. All files in your account must fit your
+                    allotted storage space.
+                  </div>
+                </div>
+                <div class="accordion accoridon__c">
+                  <input
+                    type="checkbox"
+                    name="accordion__checkbox"
+                    class="accordion__input"
+                    id="accordion-c"
+                  />
+
+                  <label class="question question__c" for="accordion-c">
+                    How do I reset my password?
+                    <div class="question__icon">
+                      <img src="./images/icon-arrow-down.svg" alt="" />
+                    </div>
+                  </label>
+                  <div class="answer answer__c">
+                    Click “Forgot password” from the login page or “Change
+                    password” from your profile page. A reset link will be
+                    emailed to you.
+                  </div>
+                </div>
+                <div class="accordion accoridon__d">
+                  <input
+                    type="checkbox"
+                    name="accordion__checkbox"
+                    class="accordion__input"
+                    id="accordion-d"
+                  />
+
+                  <label class="question question__d" for="accordion-d">
+                    Can I cancel my subscription?
+                    <div class="question__icon">
+                      <img src="./images/icon-arrow-down.svg" alt="" />
+                    </div>
+                  </label>
+                  <div class="answer answer__d">
+                    Yes! Send us a message and we’ll process your request no
+                    questions asked.
+                  </div>
+                </div>
+                <div class="accordion accoridon__e">
+                  <input
+                    type="checkbox"
+                    name="accordion__checkbox"
+                    class="accordion__input"
+                    id="accordion-e"
+                  />
+
+                  <label class="question question__e" for="accordion-e">
+                    Do you provide additional support?
+                    <div class="question__icon">
+                      <img src="./images/icon-arrow-down.svg" alt="" />
+                    </div>
+                  </label>
+                  <div class="answer answer__e">
+                    Chat and email supports available 24/7. Phone lines are open
+                    during normal business hours.
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="accoridon__b">
-              <div class="question question__b">
-                What is the maximum file upload size?
-              </div>
-              <div class="answer answer__b">
-                No more than 2GB. All files in your account must fit your
-                allotted storage space.
-              </div>
-            </div>
-            <div class="accoridon__d">
-              <div class="question question__d">
-                Can I cancel my subscription?
-              </div>
-              <div class="answer answer__d">
-                Yes! Send us a message and we’ll process your request no
-                questions asked.
-              </div>
-            </div>
-            <div class="accoridon__e">
-              <div class="question question__e">
-                Do you provide additional support?
-              </div>
-              <div class="answer answer__e">
-                Chat and email supportis available 24/7. Phone lines are open
-                during normal business hours. -->
-              </div>
-            </div>
-          </div> 
+          </div>
         </div>
       </div>
+      <div class="attribution">Coded by <a href="#">NightClover-code</a>.</div>
     </div>
-    <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   </body>
 </html>
