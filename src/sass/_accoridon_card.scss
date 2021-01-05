@@ -46,9 +46,9 @@
     }
     .container {
       overflow: visible;
-      background: url('/images/bg-pattern-desktop.svg') top -850px left -240px
-          no-repeat,
+      background: url('/images/bg-pattern-mobile.svg') top left 50% no-repeat,
         #fff;
+      background-size: 60%;
       .accordion__design {
         position: absolute;
         left: 50%;
@@ -64,7 +64,7 @@
         .title {
           font-size: 20px;
           text-align: center;
-          margin-top: 100px;
+          margin-top: 130px;
         }
         .accordion__content {
           .accordion {
@@ -110,6 +110,18 @@
             }
           }
         }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .accordion__card {
+    .illustration__box {
+      .container {
+        overflow: visible;
+        background: url('/images/bg-pattern-mobile.svg') top left 50% no-repeat,
+          #fff;
+        background-size: 100%;
       }
     }
   }
