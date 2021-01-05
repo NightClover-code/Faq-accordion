@@ -10,10 +10,6 @@
   z-index: 10;
 }
 
-.accordion__card .illustration__box img {
-  width: 100%;
-}
-
 .accordion__card .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -39,7 +35,6 @@
 
 @media screen and (max-width: 1000px) {
   .accordion__card {
-    position: relative;
     margin: auto;
     max-width: 500px;
   }
@@ -78,55 +73,6 @@
     text-align: center;
     margin-top: 130px;
   }
-  .accordion__card .container .accordion__faq .accordion__content .accordion {
-    border-bottom: 1px solid #e7e7e9;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .accordion__input {
-    visibility: hidden;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .accordion__input:checked ~ .answer {
-    display: block !important;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .accordion__input:checked ~ .question {
-    font-weight: bold;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .accordion__input:checked ~ .question .question__icon {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .accordion__input:checked ~ .question:hover {
-    color: #1d1e35;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .question {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    font-size: 15px;
-    padding: 20px 0;
-    cursor: pointer;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .question .question__icon {
-    width: 13px;
-    cursor: pointer;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .question .question__icon img {
-    width: 100%;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .question:hover {
-    color: #f47c57;
-  }
-  .accordion__card .container .accordion__faq .accordion__content .accordion .answer {
-    display: none;
-    font-size: 13px;
-    padding: 10px;
-  }
 }
 
 @media screen and (max-width: 500px) {
@@ -140,7 +86,6 @@
 .accordion__faq {
   margin-left: 50%;
   margin-top: 30px;
-  float: right;
   width: 40%;
 }
 
@@ -187,6 +132,7 @@
           justify-content: space-between;
   font-size: 15px;
   padding: 20px 0;
+  color: #4a4b5e;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -208,6 +154,7 @@
 }
 
 .accordion__faq .accordion__content .accordion .answer {
+  color: #787887;
   display: none;
   font-size: 13px;
   padding: 10px;
